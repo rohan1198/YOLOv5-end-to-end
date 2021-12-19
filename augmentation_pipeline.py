@@ -21,7 +21,7 @@ def make_batch(images_path_list, num_images_per_process):
         yield images_path_list[i: i + num_images_per_process]
 
 
-def resize_images(image: str, size: int = 416):
+def resize_images(image, size: int = 416):
     resized = cv2.resize(image, (size, size))
     return resized
 
